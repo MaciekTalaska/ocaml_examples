@@ -23,14 +23,3 @@ let inputs = [ 3.4; 3.5; 3.6];;
 Printf.printf "Value \t rounded \t rounded2\n";;
 
 List.iter (fun x -> Printf.printf "%2.2f \t %2.2f \t\t %2.2f\n" x (round x) (round2 x)) inputs;;
-
-(*
-let avg = average 3.0 7.0;;
-
-Printf.printf "Average of %8d and %8d is: %8d\n" 3 7 (average 3.0 7.0);;
-
-let r = round avg;;
-
-Printf.printf "Rounded: %8d\n" r;;
-Printf.printf "ala ma kota\n";;
-*)
