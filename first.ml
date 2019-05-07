@@ -18,29 +18,11 @@ let round n =
   | true -> ceil n
   | false -> floor n;;
 
-Printf.printf "Hello world from OCaml!\n";;
+let inputs = [ 3.4; 3.5; 3.6];;
 
-let value = calc_rest 3.2;;
-Printf.printf "result is: %8f\n" value
+Printf.printf "Value \t rounded \t rounded2\n";;
 
-let rounded = round 3.3;;
-Printf.printf "3.3 rounded is: %8f\n" rounded;;
-
-let rounded2 = round 3.5;;
-Printf.printf "3.5 rounded is: %8f\n" rounded2;;
-
-let rounded3 = round 3.6;;
-Printf.printf "3.6 rounded is: %8f\n" rounded3;;
-
-let rounded21 = round2 3.3;;
-Printf.printf "3.3 rounded2 is: %8f\n" rounded21;;
-
-let rounded22 = round2 3.5;;
-Printf.printf "3.5 rounded2 is: %8f\n" rounded22;;
-
-let rounded23 = round2 3.6;;
-Printf.printf "3.6 rounded2 is: %8f\n" rounded23;;
-
+List.iter (fun x -> Printf.printf "%2.2f \t %2.2f \t\t %2.2f\n" x (round x) (round2 x)) inputs;;
 
 (*
 let avg = average 3.0 7.0;;
