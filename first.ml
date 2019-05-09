@@ -17,7 +17,7 @@ let round n =
   | true -> ceil n
   | false -> floor n;;
 
-let inputs = [ 3.4; 3.5; 3.6];;
+let inputs = [3.4; 3.5; 3.6];;
 
 Printf.printf "Value \t rounded \t rounded2\n";;
 List.iter (fun x -> Printf.printf "%2.2f \t %2.2f \t\t %2.2f\n" x (round x) (round2 x)) inputs;;

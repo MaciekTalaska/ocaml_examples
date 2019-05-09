@@ -1,0 +1,14 @@
+name: first
+version: 0.0.1
+description:
+  This is my first OCaml project
+  .
+  This is a simple program that manipulates numbers
+licence: MIT
+authors: Maciek Talaska
+obuild-ver: 1
+homepage: https://github.com/MaciekTalaska/ocaml_examples
+ocaml-extra-args: -w A
+executable first
+  main-is: first.ml
+  build-deps: unix
