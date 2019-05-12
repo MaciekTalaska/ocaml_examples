@@ -17,7 +17,20 @@ let round (n:float) : float =
   | true -> ceil n
   | false -> floor n
 
+let isEven (n:int) : bool =
+  n mod 2 == 0
+
+let isOdd (n:int) : bool =
+  n mod 2 != 0
+
 let inputs = [3.4; 3.5; 3.6];;
 
-Printf.printf "Value \t rounded \t rounded2\n";;
+Printf.printf "check rounding floats...\n";;
+Printf.printf "Value \t round \t round2\n";;
 List.iter (fun x -> Printf.printf "%2.2f \t %2.2f \t\t %2.2f\n" x (round x) (round2 x)) inputs;;
+
+
+let inputs = [1; 2; 3; 4; 5; 6];;
+Printf.printf "\n\nCheck if number is odd/even\n";;
+Printf.printf "Value \t odd \t even\n";;
+List.iter (fun x -> Printf.printf "%2d \t %B \t %B\n" x (isEven x) (isOdd x)) inputs;;
