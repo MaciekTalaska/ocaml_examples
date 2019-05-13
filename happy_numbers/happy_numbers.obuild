@@ -1,0 +1,14 @@
+name: first
+version: 0.0.1
+description:
+  Check if int > 0 is a happy number
+  .
+  Happy number is a number for which (recursive) calculation of sum of squares of its digits is equal to 1
+licence: MIT
+authors: Maciek Talaska
+obuild-ver: 1
+homepage: https://github.com/MaciekTalaska/ocaml_examples
+ocaml-extra-args: -w A
+executable happy_numbers
+  main-is: happy_numbers.ml
+  build-deps: unix
