@@ -7,7 +7,7 @@ let isHappy (n: int) : bool =
   false
 
 let isHappyInt (n: int) : bool =
-  
+  false
 
 let intsquare_of_char (c: char) : int =
   let n = int_of_char c - int_of_char '0' in
@@ -24,5 +24,4 @@ let inputs = range 1 10;;
 
 Printf.printf "Value\tisHappy?\n";;
 List.iter (fun x -> Printf.printf "%d\t%B\n" x (isHappy x)) inputs;;
-
 
