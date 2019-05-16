@@ -12,3 +12,8 @@ ocaml-extra-args: -w A
 executable first
   main-is: first.ml
   build-deps: unix
+  
+test xyz
+  src-dir: .
+  main-is: first_test.ml
+  build-deps: obuild 
