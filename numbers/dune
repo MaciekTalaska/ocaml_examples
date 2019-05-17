@@ -1,2 +1,3 @@
 (executable
-  (name first))
+  (name first)
+  (libraries lib))
