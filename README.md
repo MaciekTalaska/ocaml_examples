@@ -34,3 +34,9 @@ That will result in executable being created in the same folder where `*.obuild`
 type:
 
 `dune build <projectname>.exe` to build your executable (the `.exe` suffix is part of the convention, no matter what OS you use).
+
+## How to run unit tests
+
+I have tried to write some unit tests. If they exist, they shoul  be placed inside `test` directory.
+In such a case, type: `dune runtest` to have unit tests run.
+Please note: Ounit has to be installed via Opam first.
