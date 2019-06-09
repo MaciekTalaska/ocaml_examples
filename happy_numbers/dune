@@ -1,0 +1,2 @@
+(executable
+  (name happy_numbers))
