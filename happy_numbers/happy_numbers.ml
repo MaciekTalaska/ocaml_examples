@@ -14,6 +14,7 @@ let intsquare_of_string (s: string) : int =
   List.fold_left (+) 0 squares;;
 
 let rec isHappyInternal (n: int) (all_numbers: 'int list) : bool =
+  ignore (Printf.printf "%d -> " n);
   let newn = intsquare_of_string (string_of_int n) in
   if newn == 1 then
     true
