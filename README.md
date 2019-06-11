@@ -2,6 +2,8 @@
 
 This is collection of simple OCaml programs that I have written while learning some basics of OCaml.
 
+Please not that I haven't written any OCaml code before!
+
 ## How to get OCaml?
 
 I strongly suggest you to get OCaml via [asdf-ocaml](https://github.com/vic/asdf-ocaml)
@@ -12,7 +14,7 @@ I have been experimenting with OCaml build systems, so it took me a while to dec
 
 Depending if there is a `.obuild` or `_oasis`, or `dune` file, use either 
 - [obuild](https://github.com/ocaml-obuild/obuild)
-- [oasis](https://ocaml.org/learn/tutorials/setting_up_with_oasis.html)
+~~- [oasis](https://ocaml.org/learn/tutorials/setting_up_with_oasis.html)~~
 - [dune](https://github.com/ocaml/dune)
 
 ### Obuild
@@ -29,13 +31,15 @@ That will result in executable being created in the same folder where `*.obuild`
 
 ### Dune
 
-`obuild` is great for just building binaries, and is super simple. `Dune` on the other hand seems to be default choice for OCaml projects right now, it also seem to work much better with unit tests.
+`obuild` is great for just building binaries, and is super simple. `Dune` on the other hand seems to be default choice for OCaml projects right now, it also seem to work much better with unit tests (I was struggling a bit to understand how to write unit tests for `obuild`).
+
+Dune is a bit harder to set up / configure for the first time, but after that it is pretty simple to use (I still find obuild more convenient for quick changes).
 
 type:
 
 `dune build <projectname>.exe` to build your executable (the `.exe` suffix is part of the convention, no matter what OS you use).
 
-## How to run unit tests
+#### How to run unit tests (using Dune)
 
 I have tried to write some unit tests. If they exist, they shoul  be placed inside `test` directory.
 In such a case, type: `dune runtest` to have unit tests run.
