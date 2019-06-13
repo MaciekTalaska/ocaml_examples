@@ -18,9 +18,17 @@ let rec isHappyInternal (n: int) (all_numbers: 'int list) (p: bool) : bool =
     ignore (Printf.printf "%d -> " n);
   let newn = intsquare_of_string (string_of_int n) in
   if newn == 1 then
+    begin
+      if p  then
+        Printf.printf "%d |" newn;
     true
+    end
   else if List.mem newn all_numbers then
+    begin
+      if p then
+        Printf.printf "%d |" newn;
     false
+    end
   else
     isHappyInternal newn (newn :: all_numbers) p
 
